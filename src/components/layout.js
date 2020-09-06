@@ -12,14 +12,12 @@ const Layout = ({ children }) => {
   const engine = new Styletron();
 
   return (
-    <StyletronProvider value={engine}>
-      <BaseProvider theme={LightTheme}>
-        <>
+    <>
+      <>
         <Navbar/>
           <main>{children}</main>
-        </>
-      </BaseProvider>
-    </StyletronProvider>
+      </>
+    </>
   )
 }
 
