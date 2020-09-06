@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Gatsby Starter - Base Web`,
+    description: `A Starter made by Fred Garingo using BaseWeb Design by Uber. BaseWeb Documentation can be found here https://baseweb.design.`,
+    author: `Fred Garingo`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -30,5 +30,28 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-plugin-styletron",
+      options: {
+        // You can pass options to Styletron.
+        // Prefix all generated classNames:
+        prefix: "_"
+      }
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Montserrat`,
+            variants: [`900`],
+          },
+          {
+            family: `Hind Madurai`,
+            variants: [`400`, `500`, `600`, `700`]
+          },
+        ],
+      },
+    },
   ],
 }
