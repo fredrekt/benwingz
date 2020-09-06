@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+    <img alt="Base Web" src="https://baseweb.design/_next/static/images/base-web-23a69939f66b9680f14a0a1bb083ae2e.svg" width="60" />
   </a>
 </p>
 <h1 align="center">
