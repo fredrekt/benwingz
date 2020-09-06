@@ -29,6 +29,12 @@ import {
   } from "baseui/modal";
 import { KIND as ButtonKind } from "baseui/button";
 import { Notification } from "baseui/notification";
+import {
+    HeaderNavigation,
+    ALIGN,
+    StyledNavigationList,
+    StyledNavigationItem
+  } from "baseui/header-navigation";
 
 const ElementsPage = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -235,6 +241,32 @@ const ElementsPage = () => {
                     <Notification closeable>
                     {() => "This is a notification."}
                     </Notification>
+                </Block>
+                <Block>
+                    <HeadingTitle>Navigation</HeadingTitle>
+                    <HeaderNavigation>
+                    <StyledNavigationList $align={ALIGN.left}>
+                        <StyledNavigationItem>Uber</StyledNavigationItem>
+                    </StyledNavigationList>
+                    <StyledNavigationList $align={ALIGN.center} />
+                    <StyledNavigationList $align={ALIGN.right}>
+                        <StyledNavigationItem>
+                        <StyledLink href="#basic-link1">
+                            Tab Link One
+                        </StyledLink>
+                        </StyledNavigationItem>
+                        <StyledNavigationItem>
+                        <StyledLink href="#basic-link2">
+                            Tab Link Two
+                        </StyledLink>
+                        </StyledNavigationItem>
+                    </StyledNavigationList>
+                    <StyledNavigationList $align={ALIGN.right}>
+                        <StyledNavigationItem>
+                        <Button>Get started</Button>
+                        </StyledNavigationItem>
+                    </StyledNavigationList>
+                    </HeaderNavigation>
                 </Block>
                 <Block>
                     <HeadingTitle>Table</HeadingTitle>
