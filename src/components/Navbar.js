@@ -6,7 +6,6 @@ import {
   StyledNavigationItem
 } from "baseui/header-navigation";
 import { StyledLink } from "baseui/link";
-import { Button } from "baseui/button";
 
 export default () => {
   return (
@@ -19,7 +18,7 @@ export default () => {
         </StyledNavigationItem>
       </StyledNavigationList>
       <StyledNavigationList $align={ALIGN.center} />
-      <StyledNavigationList $align={ALIGN.right}>
+      <StyledNavigationList style={{ marginRight: `1.5rem` }} $align={ALIGN.right}>
         <StyledNavigationItem>
           <StyledLink href="/about">
             About
@@ -30,15 +29,10 @@ export default () => {
             Elements
           </StyledLink>
         </StyledNavigationItem>
-        {/* <StyledNavigationItem>
-          <StyledLink href="#basic-link2">
-            Typography
-          </StyledLink>
-        </StyledNavigationItem> */}
-      </StyledNavigationList>
-      <StyledNavigationList $align={ALIGN.right}>
         <StyledNavigationItem>
-          <Button>Get started</Button>
+          <StyledLink href="/contact">
+            Contact
+          </StyledLink>
         </StyledNavigationItem>
       </StyledNavigationList>
     </HeaderNavigation>
