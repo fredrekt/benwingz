@@ -218,7 +218,6 @@ const ElementsPage = () => {
                     closeable
                     isOpen={isOpen}
                     animate
-                    autoFocus
                     size={SIZE.default}
                     role={ROLE.dialog}
                     >
