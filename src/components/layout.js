@@ -7,10 +7,10 @@ import PropTypes from "prop-types"
 
 import "./layout.css"
 import Navbar from './Navbar';
-import NotFoundPage from '../pages/404';
+import Loading from './Loading';
 
 const Layout = ({ children }) => {
-  if(typeof window === `undefined`) return <NotFoundPage/>;
+  if(typeof window === `undefined`) return <Loading/>;
   const engine = new Styletron();
 
   return (
