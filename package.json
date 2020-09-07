@@ -28,7 +28,14 @@
     "prettier": "2.1.0"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "Minimalist Starter",
+    "baseui",
+    "styletron",
+    "minimal design",
+    "base web",
+    "BaseWeb",
+    "Minimalist"
   ],
   "license": "0BSD",
   "scripts": {
