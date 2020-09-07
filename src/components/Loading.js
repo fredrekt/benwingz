@@ -13,9 +13,9 @@ const Loading = () => {
         alignSelf: `center`
     })
     return (
-        <LoadingContainer>
+        <div>
            <img src={ellipsis} alt=""/>
-        </LoadingContainer>
+        </div>
     )
 }
 
