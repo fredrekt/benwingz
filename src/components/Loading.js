@@ -5,17 +5,15 @@ import {styled} from 'styletron-react';
 const Loading = () => {
     const LoadingContainer = styled('div',{
         display: `flex`,
-        position: `fixed`,
-        width: `100%`, height: `100%`,
-        textAlign: `center`,
-        justifyContent: `center`,
-        alignItems: `center`,
-        alignSelf: `center`
+        position: `absolute`,
+        left: `0`,
+        right: `0`,
+        transform: `translate(-50%, -50%)`
     })
     return (
-        <div>
+        <LoadingContainer>
            <img src={ellipsis} alt=""/>
-        </div>
+        </LoadingContainer>
     )
 }
 
