@@ -9,8 +9,8 @@ import "./layout.css"
 import Navbar from './Navbar';
 
 const Layout = ({ children }) => {
-  let engine = new Styletron();
-  typeof window !== `undefined` && engine;
+  if(typeof window === `undefined`) return ;
+  const engine = new Styletron();
 
   return (
     <StyletronProvider value={engine}>
