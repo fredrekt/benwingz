@@ -3,7 +3,7 @@ import ellipsis from '../images/ellipsis.gif'
 
 const Loading = () => {
     return (
-        <div style={{ textAlign: `center` }}>
+        <div style={{ textAlign: `center`, marginTop: `25%` }}>
            <img src={ellipsis} alt=""/>
         </div>
     )
