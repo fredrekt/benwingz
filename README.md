@@ -5,7 +5,7 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby Starter : Base Web
+  Ben Wingz Landing Page
 </h1>
 
 Start your project with this boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React. Base Web is made by Uber. [Read more here about Base Web](https://baseweb.design/).
