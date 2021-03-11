@@ -22,7 +22,7 @@ class Navbar extends React.Component {
     return (
       <div>
         <header>
-            <MDBNavbar color="bg-primary" fixed="top" className="p-3 z-depth-0" dark expand="md" scrolling transparent>
+            <MDBNavbar color="bg-primary" fixed="top" className="p-3 py-4 my-3 z-depth-0" dark expand="md" scrolling transparent>
               {!this.state.isWideEnough && <MDBNavbarToggler onClick={this.onClick} />}
               <MDBCollapse isOpen={this.state.collapse} navbar>
                 <MDBNavbarNav center className="text-uppercase">
