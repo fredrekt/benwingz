@@ -22,29 +22,29 @@ class Navbar extends React.Component {
     return (
       <div>
         <header>
-            <MDBNavbar color="bg-primary" fixed="top" className="p-3 py-4 my-3 z-depth-0" dark expand="md" scrolling transparent>
+            <MDBNavbar color="black" fixed="top" className="p-3 py-4 mb-3 z-depth-0" dark expand="md" scrolling transparent>
               {!this.state.isWideEnough && <MDBNavbarToggler onClick={this.onClick} />}
               <MDBCollapse isOpen={this.state.collapse} navbar>
                 <MDBNavbarNav center className="text-uppercase">
                   <MDBNavItem className="px-4">
-                      <Link className="nav-link" to='/'>
+                      <Link activeStyle={{ textDecoration: `line-through` }} className="nav-link" to='/'>
                         Home
                       </Link>
                   </MDBNavItem>
                   <MDBNavItem className="px-4">
-                    <Link className="nav-link" to="/about">About</Link>
+                    <Link className="nav-link" activeStyle={{ textDecoration: `line-through` }} to="/about">About</Link>
                   </MDBNavItem>
                   <MDBNavItem className="px-4">
-                    <Link className="nav-link" to='/menu'>Menu</Link>
+                    <Link className="nav-link" activeStyle={{ textDecoration: `line-through` }} to='/menu'>Menu</Link>
                   </MDBNavItem>
                   <MDBNavItem className="px-4">
-                    <Link className="nav-link" to='/order'>Order</Link>
+                    <Link activeStyle={{ textDecoration: `line-through` }} className="nav-link" to='/contact#order'>Order</Link>
                   </MDBNavItem>
                   <MDBNavItem className="px-4">
-                    <Link className="nav-link" to='/contact'>Contact</Link>
+                    <Link activeStyle={{ textDecoration: `line-through` }} className="nav-link" to='/contact'>Contact</Link>
                   </MDBNavItem>
                   <MDBNavItem className="px-4">
-                    <Link className="nav-link" to='/about#reviews'>Reviews</Link>
+                    <Link activeStyle={{ textDecoration: `line-through` }} className="nav-link" to='/reviews'>Reviews</Link>
                   </MDBNavItem>
                 </MDBNavbarNav>
               </MDBCollapse>

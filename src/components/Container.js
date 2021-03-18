@@ -3,8 +3,8 @@ import React from "react";
 
 export default ({children}) => {
     const Container = styled('div', {
-        paddingLeft: `3rem`,
-        paddingRight: `3rem` 
+        paddingLeft: `0rem`,
+        paddingRight: `0rem` 
     });
     return(
         <Container>
