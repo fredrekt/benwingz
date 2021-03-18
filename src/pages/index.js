@@ -5,13 +5,14 @@ import Container from "../components/Container"
 import { MDBBtn, MDBCol, MDBContainer, MDBMask, MDBRow, MDBView } from 'mdbreact';
 import Moment from 'react-moment';
 import { Link } from 'gatsby';
+import food from '../images/chicken_wings_banner.jpg';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Container>
-      <MDBView src="https://www.thespruceeats.com/thmb/9shc4F8CQ-9alqEnpLNXhWS0WlE=/3068x3068/smart/filters:no_upscale()/traditional-chicken-wings-912937-hero-01-6c1a003373a54538a732abc0005145d8.jpg">
-          <MDBMask overlay="purple-light" className="flex-center flex-column text-white text-center">
+      <MDBView src={food}>
+          <MDBMask overlay="black-slight" className="flex-center flex-column text-white text-center">
             <h1 className="text-uppercase display-2">Ben Wingz</h1>
             <p className="lead">
               

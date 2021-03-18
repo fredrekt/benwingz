@@ -21,6 +21,11 @@ const ContactPage = () => {
 
     const onChange = e => setFormData({ [e.target.name]: e.target.value })
 
+    const onSubmit = e => {
+        e.preventDefault();
+        alert(name, email, review, rating)
+    }
+
     return (
         <Layout>
             <SEO title="Contact"/>
@@ -35,39 +40,41 @@ const ContactPage = () => {
                             </MDBView>
                         </MDBCol>
                         <MDBCol className="black px-0">
-                            <MDBContainer className="py-5 px-5 my-5">
+                            <MDBContainer id="order" className="py-5 px-5 my-5">
                                 <h1 className="h1-responsive header-font mb-5 font-weight-bold white-text">Contact Us</h1>
                                 <div className="content my-5">
+
                                     <div className="connected mb-4 white-text">
-                                        <h4 className="h4-responsive text-uppercase">Stay Connected</h4>
-                                        <p className="lead m-0"><span className="font-weight-bold">P, </span><a href="">604-695-5500</a></p>
-                                        <p className="lead m-0"><span className="font-weight-bold">E, </span><a href="">info@botanistrestaurant.com</a></p>
+                                        <h4 className="h4-responsive text-uppercase">Stay Connected / ORDER</h4>
+                                        <p className="lead m-0"><span className="font-weight-bold">P, </span><a href="callto:+639958401502">+63 995 8401 502</a></p>
+                                        <p className="lead m-0"><span className="font-weight-bold">E, </span><a href="mailto:benwingz.cebu@gmail.com">benwingz.cebu@gmail.com</a></p>
+                                        <p className="lead m-0"><span className="font-weight-bold">F, </span><a href="https://www.facebook.com/benwingztaco">fb.com/benwingztaco</a></p>
                                     </div>
                                     
                                     <div className="connected mb-4 white-text">
                                         <h4 className="h4-responsive text-uppercase">For Developer inquiries please contact</h4>
-                                        <p className="lead m-0"><span className="font-weight-bold">E, </span><a href="">fredrickjohng6@gmail.com</a></p>
+                                        <p className="lead m-0"><span className="font-weight-bold">E, </span><a href="mailto:fredrickjohng6@gmail.com">fredrickjohng6@gmail.com</a></p>
                                     </div>
                                 </div>
 
                                 <div className="hours-operation my-5">
                                     <div className="hours-details white-text">
                                     <h4 className="h4-responsive font-weight-bold">Hours of Operation</h4>
-                                    <p className="lead m-0">Monday – Sunday, 10:00am – 10:00pm</p>
+                                    <p className="lead m-0">Monday – Sunday, 11:00am – 10:00pm</p>
                                     </div>
                                 </div>
 
                                 <div className="location my-5">
                                     <div className="location-details white-text">
-                                        <p className="lead m-0">1038 Canada Place</p>
-                                        <p className="lead m-0">Vancouver, British Columbia</p>
-                                        <p className="lead m-0">Canada V6C 0B9</p>
+                                        <p className="lead m-0">Yared Compound</p>
+                                        <p className="lead m-0">Maghaway Road, Upper Lawaan I</p>
+                                        <p className="lead m-0">Talisay City, 6045</p>
                                     </div>
                                 </div>
                                 
                                 <div className="location-maps my-5">
                                     <div className="location-details white-text">
-                                        <a href="#map" className="lead text-uppercase m-0">Google Map</a>
+                                        <a href="https://www.google.com/maps/dir/10.256989,123.8299632/10.2654315,123.8227844/@10.2655307,123.8233134,18.76z/data=!4m10!4m9!1m6!3m4!1m2!1d123.824593!2d10.2646069!3s0x33a99d097926675d:0xddabcb5ff40a4a73!4e1!1m0!3e0" className="lead text-uppercase m-0">Google Map</a>
                                     </div>
                                 </div>
                             </MDBContainer>
@@ -75,7 +82,7 @@ const ContactPage = () => {
                     </MDBRow>
                 </MDBContainer>
                 <MDBContainer className="py-5">
-                    <form>
+                    <form onSubmit={(e) => onSubmit(e)}>
                         <MDBRow center className="text-center mt-5">
                             <MDBCol>
                                 <h1 className="h1-responsive header-font mb-5 font-weight-bold">Submit Review</h1>
@@ -86,6 +93,7 @@ const ContactPage = () => {
                                 <Input
                                     name="name"
                                     value={name}
+                                    type="text"
                                     onChange={e => onChange(e)}
                                     placeholder="Your Name"
                                     clearOnEscape
@@ -97,6 +105,7 @@ const ContactPage = () => {
                                 <Input
                                     name="email"
                                     value={email}
+                                    type="email"
                                     onChange={e => onChange(e)}
                                     placeholder="Your Email"
                                     clearOnEscape
@@ -130,7 +139,7 @@ const ContactPage = () => {
                         </MDBRow>
                         <MDBRow center className="my-4 pb-5 text-center">
                             <MDBCol>
-                                <Button endEnhancer={() => <ArrowRight size={24} />}>
+                                <Button type="submit" endEnhancer={() => <ArrowRight size={24} />}>
                                     Send Message
                                 </Button>
                             </MDBCol>
