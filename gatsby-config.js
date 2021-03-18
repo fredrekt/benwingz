@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter - Base Web`,
-    description: `A Starter made by Fred Garingo using BaseWeb Design by Uber. BaseWeb Documentation can be found here https://baseweb.design.`,
+    title: `Ben Wingz`,
+    description: `A Landing page about the restaurant called Ben Wingz. About the restaurant and promoting it and showcasing their food and promote their brand.`,
     author: `Fred Garingo`,
   },
   plugins: [
@@ -43,11 +43,15 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Montserrat`,
-            variants: [`900`],
+            family: `Nobile`,
+            variants: [`400`, `500`, `700`],
           },
           {
-            family: `Hind Madurai`,
+            family: `Cormorant Infant`,
+            variants: [`400`, `500`, `600`, `700`]
+          },
+          {
+            family: `Maitree`,
             variants: [`400`, `500`, `600`, `700`]
           },
         ],
