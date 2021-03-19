@@ -39,23 +39,12 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: 'gatsby-plugin-web-font-loader',
       options: {
-        fonts: [
-          {
-            family: `Nobile`,
-            variants: [`400`, `500`, `700`],
-          },
-          {
-            family: `Cormorant Infant`,
-            variants: [`400`, `500`, `600`, `700`]
-          },
-          {
-            family: `Maitree`,
-            variants: [`400`, `500`, `600`, `700`]
-          },
-        ],
-      },
+        google: {
+          families: ['Nobile: 400, 500, 700', 'Cormorant Infant: 400, 500, 600, 700', 'Maitree: 400, 500, 600, 700']
+        }
+      }
     },
   ],
 }
