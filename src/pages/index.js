@@ -20,26 +20,26 @@ const IndexPage = () => (
           </MDBMask>
           <footer className="footer-pos py-4 w-responsive px-4 mx-5">
             <MDBContainer className="white-text">
-                <MDBRow className="w-50 float-right align-items-center" end>
-                  <MDBCol>
+                <MDBRow className="w-responsive float-right align-items-center" end>
+                  <MDBCol size="3">
                     <p className="small">
                       <Moment format="DD MMM YYYY">
                         {Date.now()}
                       </Moment>
                     </p>
                   </MDBCol>
-                  <MDBCol>
+                  <MDBCol size="2">
                     <p className="small">/</p>
                   </MDBCol>
-                  <MDBCol>
+                  <MDBCol size="2">
                     <p className="small">
                       <Moment format="hh: mm A" date={Date.now()}/>
                     </p>
                   </MDBCol>
-                  <MDBCol>
+                  <MDBCol size="2">
                     <p className="small">/</p>
                   </MDBCol>
-                  <MDBCol>
+                  <MDBCol size="3">
                     <p className="small text-uppercase">
                       <Link className="white-text" to='order'>
                         <MDBBtn className="mx-0" outline size="sm" color="white">

@@ -4,6 +4,7 @@ import Container from '../components/Container'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import hero from '../images/hero_tacos.jpeg';
+import { StyledLink } from "baseui/link";
 
 const MenuPage = () => {
     return (
@@ -26,7 +27,7 @@ const MenuPage = () => {
                         </MDBCol>
                     </MDBRow>
                     <MDBRow className="py-4">
-                        <MDBCol>
+                        <MDBCol md="6" lg="6">
                             <div className="menu-content">
                                 <div className="menu-title">
                                     <h1 className="h1-responsive font-weight-bold header-font">
@@ -46,12 +47,12 @@ const MenuPage = () => {
                                 </div>
                             </div>
                         </MDBCol>
-                        <MDBCol>
+                        <MDBCol md="6" lg="6">
                             <img src="https://static01.nyt.com/images/2019/02/01/dining/as-baked-buffalo-wings/merlin_149955708_93f772ee-ec5e-4f4a-97fe-87f2df4a97ef-articleLarge.jpg" alt="" className="img-fluid"/>
                         </MDBCol>
                     </MDBRow>
                     <MDBRow className="py-4">
-                        <MDBCol>
+                        <MDBCol md="6" lg="6">
                             <div className="menu-content">
                                 <div className="menu-title">
                                     <h1 className="h1-responsive font-weight-bold header-font">
@@ -70,12 +71,12 @@ const MenuPage = () => {
                                 </div>
                             </div>
                         </MDBCol>
-                        <MDBCol>
+                        <MDBCol md="6" lg="6">
                             <img src="https://www.thekitchenmagpie.com/wp-content/uploads/images/2020/03/GarlicParmesanChickenWings.jpg" alt="" className="img-fluid"/>
                         </MDBCol>
                     </MDBRow>
                     <MDBRow className="py-4">
-                        <MDBCol>
+                        <MDBCol md="6" lg="6">
                             <div className="menu-content">
                                 <div className="menu-title">
                                     <h1 className="h1-responsive font-weight-bold header-font">
@@ -94,12 +95,12 @@ const MenuPage = () => {
                                 </div>
                             </div>
                         </MDBCol>
-                        <MDBCol>
+                        <MDBCol md="6" lg="6">
                             <img src="https://www.eatthelove.com/wp-content/uploads/2016/01/Teriyaki-Chicken-Wings-6.jpg" alt="" className="img-fluid"/>
                         </MDBCol>
                     </MDBRow>
                     <MDBRow className="py-4">
-                        <MDBCol>
+                        <MDBCol md="6" lg="6">
                             <div className="menu-content">
                                 <div className="menu-title">
                                     <h1 className="h1-responsive font-weight-bold header-font">
@@ -118,12 +119,12 @@ const MenuPage = () => {
                                 </div>
                             </div>
                         </MDBCol>
-                        <MDBCol>
+                        <MDBCol md="6" lg="6">
                             <img src="http://images.summitmedia-digital.com/yummyph/images/2017/04/20/salted-egg-fried-chicken-wings.jpg" alt="" className="img-fluid"/>
                         </MDBCol>
                     </MDBRow>
                     <MDBRow className="py-4">
-                        <MDBCol>
+                        <MDBCol md="6" lg="6">
                             <div className="menu-content">
                                 <div className="menu-title">
                                     <h1 className="h1-responsive font-weight-bold header-font">
@@ -143,7 +144,7 @@ const MenuPage = () => {
                                 </div>
                             </div>
                         </MDBCol>
-                        <MDBCol>
+                        <MDBCol md="6" lg="6">
                             <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2014/1/28/0/KC0103_BBQ-Wings-with-Blue-Cheese-Butter_s4x3.jpg.rend.hgtvcom.616.462.suffix/1397472589593.jpeg" alt="" className="img-fluid"/>
                         </MDBCol>
                     </MDBRow>
@@ -155,7 +156,7 @@ const MenuPage = () => {
                         </MDBCol>
                     </MDBRow>
                     <MDBRow className="py-4">
-                        <MDBCol>
+                        <MDBCol md="6" lg="6">
                             <div className="menu-content">
                                 <div className="menu-title">
                                     <h1 className="h1-responsive font-weight-bold header-font">
@@ -174,12 +175,12 @@ const MenuPage = () => {
                                 </div>
                             </div>
                         </MDBCol>
-                        <MDBCol>
+                        <MDBCol md="6" lg="6">
                             <img src="https://images.pexels.com/photos/5454019/pexels-photo-5454019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" className="img-fluid"/>
                         </MDBCol>
                     </MDBRow>
                     <MDBRow className="py-4">
-                        <MDBCol>
+                        <MDBCol md="6" lg="6">
                             <div className="menu-content">
                                 <div className="menu-title">
                                     <h1 className="h1-responsive font-weight-bold header-font">
@@ -198,12 +199,12 @@ const MenuPage = () => {
                                 </div>
                             </div>
                         </MDBCol>
-                        <MDBCol>
+                        <MDBCol md="6" lg="6">
                             <img src="https://images.pexels.com/photos/5848702/pexels-photo-5848702.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" className="img-fluid"/>
                         </MDBCol>
                     </MDBRow>
                     <MDBRow className="py-4">
-                        <MDBCol>
+                        <MDBCol md="6" lg="6">
                             <div className="menu-content">
                                 <div className="menu-title">
                                     <h1 className="h1-responsive font-weight-bold header-font">
@@ -222,12 +223,12 @@ const MenuPage = () => {
                                 </div>
                             </div>
                         </MDBCol>
-                        <MDBCol>
+                        <MDBCol md="6" lg="6">
                             <img src="https://images.summitmedia-digital.com/yummyph/images/ChickenFajitas.jpg" alt="" className="img-fluid"/>
                         </MDBCol>
                     </MDBRow>
                     <MDBRow className="py-4">
-                        <MDBCol>
+                        <MDBCol md="6" lg="6">
                             <div className="menu-content">
                                 <div className="menu-title">
                                     <h1 className="h1-responsive font-weight-bold header-font">
@@ -246,8 +247,24 @@ const MenuPage = () => {
                                 </div>
                             </div>
                         </MDBCol>
-                        <MDBCol>
+                        <MDBCol md="6" lg="6">
                             <img src="https://veganfoodandliving-1321f.kxcdn.com/wp-content/uploads/2020/07/Mexican-Veggie-Roll-Ups.jpg" alt="" className="img-fluid"/>
+                        </MDBCol>
+                    </MDBRow>
+                    <MDBRow className="pt-5">
+                        <MDBCol>
+                            <StyledLink href="/contact#order">
+                                Place your order here
+                            </StyledLink>
+                            <br/>
+                            <StyledLink animateUnderline href="/contact">
+                                For more inquiries just kindly click on here.
+                            </StyledLink>
+                        </MDBCol>
+                    </MDBRow>
+                    <MDBRow className="pt-5">
+                        <MDBCol>
+
                         </MDBCol>
                     </MDBRow>
                 </section>
